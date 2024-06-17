@@ -15,7 +15,7 @@
 	} 
 
 	.container { 
-		{% comment %} background-color:#FFA07A;  {% endcomment %}
+		
 		max-width: 800px; 
 		margin: 10px auto; 
 		height: 1150px; 
@@ -112,33 +112,32 @@
 					<li>{{skill2}}</li> 
 					<li>{{skill3}}</li> 
 					<li>{{skill4}}</li> 
-					{% comment %} <li>{{skill5}}</li>  {% endcomment %}
+					
 				</ul> 
 				<h2>Education</h2> 
 				<h3>{{degree1}} </h3> 
 				<p>{{college1}}</p> 
 				<p>year:{{year1}}</p> 
-                <p>Percenatge:{{percentage1}}</p>
+               			<p>Percenatge:{{percentage1}}</p>
 				<br> 
 				<h3>{{degree2}} </h3> 
 				<p>{{college2}}</p> 
 				<p> Year :{{year2}}</p> 
-                <p>Percenatge:{{percentage2}}</p>
-                <br>
+              			<p>Percenatge:{{percentage2}}</p>
+               			 <br>
 				<h3>{{degree3}} </h3> 
 				<p>{{college3}}</p> 
 				<p> Year : {{year3}}</p> 
-                <p>Percenatge:{{percentage3r}}</p>
-                <br>
+               			<p>Percenatge:{{percentage3r}}</p>
+               			<br>
 				<h3>{{degree4}} </h3> 
 				<p>{{college4}}</p> 
 				<p> Year : {{year4}}</p> 
-                <p>Percenatge:{{percentage4}}</p>
+               			<p>Percenatge:{{percentage4}}</p>
 				<h2>Languages</h2> 
 				<ul> 
 					<li>{{lang1}}</li> 
 					<li>{{lang2}}</li> 
-					{% comment %} <li>{{lang3}}</li>  {% endcomment %}
 				</ul> 
 			</div> 
 			<div class="right"> 
@@ -216,28 +215,4 @@
 
 
 
-		{% comment %} function generatePDF(containerId) { 
-			const container = document.getElementById(containerId); 
-
-			// Download as PDF 
-			const pdfOptions = { 
-				margin: 10, 
-				filename: 'resume.pdf', 
-				image: { type: 'jpeg', quality: 0.98 }, 
-				html2canvas: { scale: 2 }, 
-				jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } 
-			}; 
-
-			html2pdf() 
-				.from(container) 
-				.set(pdfOptions) 
-				.outputPdf() 
-				.then(function (pdf) { 
-					const pdfBlob = new Blob([pdf], { type: 'application/pdf' }); 
-					const pdfUrl = URL.createObjectURL(pdfBlob); 
-					const pdfLink = document.createElement('a'); 
-					pdfLink.href = pdfUrl; 
-					pdfLink.download = 'resume.pdf'; 
-					pdfLink.click(); 
-				}); 
-		}  {% endcomment %}
+		
